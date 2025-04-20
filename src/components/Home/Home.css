@@ -1,0 +1,86 @@
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.leftHome{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.rightHome{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rightHome img{
+    width: 60%;
+    filter: drop-shadow(2px 2px 15px rgb(116,201,225));
+}
+
+.homedetails{
+ font-size:2vmax;
+
+}
+.line1{
+    font-size: 0.8em;
+    
+   
+}
+
+.line2{
+    font-size: 2em;
+    background: linear-gradient(to right, rgb(66, 180, 205), white);
+    background-clip: text;
+    color: transparent;
+}
+.line3{
+    font-size: 0.8em;
+}
+.homedetails button{
+        padding: 10px 30px;
+        background-color: rgb(66, 180, 205);
+        color: black;
+        border: 2px solid;
+        margin-top: 30px;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    
+}
+.homedetails button:hover{
+    background-color: transparent;
+    color:  rgb(66, 180, 205);
+   
+}
+
+@media (max-width: 750px) {
+    #home{
+        flex-direction: column-reverse;
+    }
+    .leftHome{
+        width: 100%;
+        height: 50vh;
+    }
+    .rightHome{
+        width: 100%;
+        height: 50vh;
+        align-items: end;
+        margin-top: 20px;
+    }
+    
+    
+}

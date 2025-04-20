@@ -1,0 +1,100 @@
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: rgb(17, 20, 23);
+}
+.active {
+    color:rgb(107,211,211) ;
+    border-bottom: 2px solid white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    list-style: none;
+    font-size: 15px;
+}
+
+nav h1 {
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(66, 180, 205), white);
+    background-clip: text;
+    color: transparent;
+}
+nav ul a{
+    cursor: pointer;
+
+}
+
+nav ul a:hover{
+    color:rgb(107,211,211) ;
+    border-bottom: 2px solid white;
+} 
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+} 
+.ham{
+    width: 40px;
+    height: 2px;
+    background-color: aliceblue;
+}
+.mobilemenu{
+    position: absolute;
+    top: 80px;
+    width:  100%;
+    height: 100vh;
+    right: 0;
+    transform: translate(100%);
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(17, 20, 23,0.482);
+    backdrop-filter: blur(7px); 
+    gap: 50px;
+    padding: 20px;
+}
+.activeham .ham:nth-child(1){
+
+    transform: rotate(45deg);   
+    position: relative;
+    top: 8px;
+}
+
+.activeham .ham:nth-child(2){
+    opacity: 0;   
+}
+.activeham .ham:nth-child(3){
+    transform: rotate(-45deg);   
+    position: relative;
+    top: -12px;
+}
+
+@media (max-width: 750px) {
+    .desktopmenu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }   
+}
+
+.activemobile{
+    transform: translate(0%);
+    transition: all 0.5s ease-in-out;
+}
