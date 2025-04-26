@@ -15,7 +15,7 @@ nav{
     border-bottom: 2px solid white;
 }
 
-ul {
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
