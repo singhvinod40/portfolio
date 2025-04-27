@@ -30,10 +30,13 @@ nav h1 {
     background: linear-gradient(to right, rgb(66, 180, 205), white);
     background-clip: text;
     color: transparent;
+    opacity: 1;
+    transform: translateY(0);
 }
 nav ul a{
     cursor: pointer;
-
+    opacity: 1; /* Ensure visibility by default */
+    transform: translateY(0);
 }
 
 nav ul a:hover{
@@ -97,4 +100,15 @@ nav ul a:hover{
 .activemobile{
     transform: translate(0%);
     transition: all 0.5s ease-in-out;
+}
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and h1 */
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+
 }
