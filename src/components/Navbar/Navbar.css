@@ -11,7 +11,7 @@ nav{
     background-color: rgb(17, 20, 23);
 }
 .active {
-    color:rgb(107,211,211) ;
+    color:rgb(29, 145, 240) ;
     border-bottom: 2px solid white;
 }
 
@@ -27,7 +27,7 @@ nav ul {
 
 nav h1 {
     font-size: 30px;
-    background: linear-gradient(to right, rgb(66, 180, 205), white);
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
     background-clip: text;
     color: transparent;
     opacity: 1;
@@ -40,7 +40,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color:rgb(107,211,211) ;
+    color:rgb(29, 246, 116) ;
     border-bottom: 2px solid white;
 } 
 .hamburger{
