@@ -49,7 +49,7 @@ function Navbar() {
             <h1 ref={title}>PORTFOLIO</h1>
             <img src={logo} alt="Logo" className="logo"/>
             <ul className="desktopmenu">
-                {["home", "about", "project", "contact"].map((section, index) => (
+                {["home", "about", "experience", "contact"].map((section, index) => (
                     <Link
                         key={section}
                         to={section}
@@ -75,7 +75,7 @@ function Navbar() {
                 <div className="ham"></div>
             </div>
             <ul className="mobilemenu" ref={mobile}>
-                {["home", "about", "project", "contact"].map((section) => (
+                {["home", "about", "experience", "contact"].map((section) => (
                     <Link
                         key={section}
                         to={section}

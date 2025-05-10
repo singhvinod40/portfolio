@@ -4,7 +4,8 @@ import About from './components/About/About'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
-import Project from './components/Project/Project';
+import ExperienceSection from './components/Expirence/ExperienceSection';
+
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Project/>
+      <ExperienceSection/>
       <Contact/>
     </>
   )
