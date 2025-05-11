@@ -6,6 +6,21 @@ import infosysLogo from "../../assets/infosys.png";
 import cognizantLogo from "../../assets/cognizant.jpg";
 
 const projects = [
+
+  {
+    id: 5,
+    title: "Payment Systems",
+    duration: "Feb 2024 - Present",
+    company: "ANZ",
+    technologies: ["Java 17", "IBM MQ", "Apache Camel", "Oracle Cloud"],
+    responsibilities: [
+      "Cross-border payment microservices",
+      "Messaging with IBM MQ",
+      "Deployed on Oracle Cloud"
+    ],
+    logo: anzLogo,
+    themeColor: "#00843d"
+  },
   {
     id: 1,
     title: "KYC Automation",
@@ -65,20 +80,7 @@ const projects = [
     logo: cognizantLogo,
     themeColor: "#0033a0"
   },
-  {
-    id: 5,
-    title: "Payment Systems",
-    duration: "Feb 2024 - Present",
-    company: "ANZ",
-    technologies: ["Java 17", "IBM MQ", "Apache Camel", "Oracle Cloud"],
-    responsibilities: [
-      "Cross-border payment microservices",
-      "Messaging with IBM MQ",
-      "Deployed on Oracle Cloud"
-    ],
-    logo: anzLogo,
-    themeColor: "#00843d"
-  }
+  
 ];
 
 const ProjectsGrid = () => {

@@ -17,6 +17,7 @@ function App() {
       <Home />
       <About />
       <ExperienceSection/>
+      <ProjectsTimeline />
       <Contact/>
     </>
   )
