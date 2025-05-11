@@ -46,9 +46,10 @@ form {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    gap: 20px;
+    gap: 15px;
     outline: none;
     transition: box-shadow 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 form:hover {
@@ -57,7 +58,7 @@ form:hover {
 
 form input {
     width: 80%;
-    height: 50px;
+    height: 40px;
     border-radius: 20px;
     padding: 2px;
     outline: none;
@@ -71,7 +72,7 @@ form input:focus {
 
 #textarea {
     width: 80%;
-    height: 200px;
+    height: 150px;
     border-radius: 20px;
     padding: 2px;
     outline: none;
@@ -85,7 +86,7 @@ form input:focus {
 
 #btn {
     width: 50%;
-    height: 50px;
+    height: 40px;
     background-color: rgb(105, 208, 215);
     align-items: center;
     justify-content: center;

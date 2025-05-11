@@ -53,32 +53,42 @@ const experience = [
     title: "Senior Engineer",
     company: "ANZ Operations & Technology",
     duration: "Feb 2024 - Present",
-    skills: "Java, Spring Boot, Microservices, Oracle Cloud",
-    description: ["Working as Senior Engineer in Leading Australian Bank"]
+    description: "Designing and developing microservices to facilitateseamless cross-border and inward payments." +
+      "payment processing,Utilizing Swift Translator for message transformation and enrichment to enhance" +
+      "payment interoperability."
   },
   {
     id: 2,
     title: "Techical Lead",
     company: "Ernst & Young GDS",
     duration: "Dec 2019 - Feb 2024",
-    skills: "React.js, JavaScript, HTML, CSS",
-    description: ["Worked on Apple’s Retail Domain"]
+    description: "A seasoned Developer with a background as a Java Backend " +
+      "Developer, contributing to the success of a prominent US" +
+      "based Banking giant. Proficient in handlingthe end-to-end " +
+      "development lifecycle, from gathering requirements to" +
+      "delivering a robust and reliable product."
+
   },
   {
     id: 3,
     title: "Software Engineer",
     company: "Infosys Limited",
     duration: "May 2018 - Dec 2019",
-    skills: "Java, Spring, Hibernate",
-    description: ["Worked on Banking and Financial Solutions"]
+    description: "Software Engineer with a background as a Java Backend" +
+      "Developer, with experience contributing to the success of a" +
+      "leading US-based retail giant. Highly skilled in managing the" +
+      "complete development lifecycle."
   },
   {
     id: 4,
     title: "Programmer Analyst",
-    company: "Cognizant Technology Solutions",
+    company: "Cognizant",
     duration: "Feb 2016 - Apr 2018",
-    skills: "Java, SQL, JSP, Servlets",
-    description: ["Worked on various projects in the banking domain"]
+
+    description: "Started my career as a fresh graduate through campus" +
+      "placement, underwent comprehensive training in Java and" +
+      "other technologies, and subsequently transitioned to a role" +
+      "as a Java Developer at a prominent Canadian bank."
   }
 ];
 
@@ -90,12 +100,7 @@ const AllExperience = () => (
           <h3>{exp.title}</h3>
           <h4>{exp.company}</h4>
           <p>{exp.duration}</p>
-          <p>{exp.skills}</p>
-          <ul>
-            {exp.description.map((desc, i) => (
-              <li key={i}>{desc}</li>
-            ))}
-          </ul>
+          <p>{exp.description}</p>
         </div>
         {index < experience.length - 1 && (
           <div className="arrow">
