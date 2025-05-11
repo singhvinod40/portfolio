@@ -87,6 +87,25 @@ nav ul a:hover{
     position: relative;
     top: -12px;
 }
+.activemobile{
+    transform: translate(0%);
+    transition: all 0.5s ease-in-out;
+}
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and h1 */
+}
+
+.mypic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;  
+    border: 2px solid rgb(123, 190, 249);
+    align-items: center;
+    animation: titleAnimation 1s ease-in-out; /* Add animation */
+}
 
 @media (max-width: 750px) {
     .desktopmenu{
@@ -97,18 +116,3 @@ nav ul a:hover{
     }   
 }
 
-.activemobile{
-    transform: translate(0%);
-    transition: all 0.5s ease-in-out;
-}
-.nav-title {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between logo and h1 */
-}
-.logo{
-    width: 40px;
-    height: 40px;
-    display: flex;
-
-}

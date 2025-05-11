@@ -2,20 +2,22 @@ import React, { useRef, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import gsap from "gsap";
-import logo from "../../assets/logo.png"; 
+import myPic from "../../assets/myPic.jpeg"; 
 
 function Navbar() {
     const menu = useRef(null);
     const mobile = useRef(null);
-    const title = useRef(null); // Ref for the h1 element
-    const navItems = useRef([]); // Ref for the nav items
+    const title = useRef(null); 
+    const navItems = useRef([]); 
+    const myPicRef = useRef(null); // Reference for myPic
 
     useEffect(() => {
-        // Ensure the h1 and nav items are visible before animation
+        // Ensure the h1, nav items, and myPic are visible before animation
         gsap.set(title.current, { opacity: 1 });
         gsap.set(navItems.current, { opacity: 1 });
+        gsap.set(myPicRef.current, { opacity: 1 });
 
-        // GSAP animation for the navbar title and nav items
+        // GSAP animation for the navbar title, nav items, and myPic
         const tl = gsap.timeline();
 
         // Animate the title
@@ -33,6 +35,14 @@ function Navbar() {
             "-=0.5" // Overlap with the title animation
         );
 
+        // Animate myPic
+        tl.fromTo(
+            myPicRef.current,
+            { scale: 0, opacity: 0 }, // Starting state
+            { scale: 1, opacity: 1, duration: 0.8, ease: "elastic.out(1, 0.5)" }, // Ending state
+            "-=0.8" // Overlap with the nav items animation
+        );
+
         return () => {
             // Cleanup GSAP animation
             tl.kill();
@@ -47,9 +57,19 @@ function Navbar() {
     return (
         <nav>
             <h1 ref={title}>PORTFOLIO</h1>
-            <img src={logo} alt="Logo" className="logo"/>
+            <img
+                src={myPic}
+                alt="My Pic"
+                className="mypic"
+                ref={myPicRef} // Attach the ref to myPic
+                onClick={() => {
+                    document
+                        .getElementById("home")
+                        .scrollIntoView({ behavior: "smooth" });
+                }}
+            />
             <ul className="desktopmenu">
-                {["home", "about", "experience", "contact"].map((section, index) => (
+                {["home", "about", "experience", "projects", "contact"].map((section, index) => (
                     <Link
                         key={section}
                         to={section}
@@ -75,7 +95,7 @@ function Navbar() {
                 <div className="ham"></div>
             </div>
             <ul className="mobilemenu" ref={mobile}>
-                {["home", "about", "experience", "contact"].map((section) => (
+                {["home", "about", "experience", "projects", "contact"].map((section) => (
                     <Link
                         key={section}
                         to={section}

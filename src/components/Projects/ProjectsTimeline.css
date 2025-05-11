@@ -30,12 +30,12 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 60px;
+    gap: 80px;
   }
   
   .project-card {
     /* background: rgb(247, 235, 235); */
-  
+    width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 1.75rem;
@@ -46,7 +46,7 @@
   
   .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgb(105, 208, 215), 2px 2px 20px rgb(105, 208, 215);
   }
   
   /* Project Header */
@@ -62,11 +62,12 @@
     height: 50px;
     object-fit: contain;
     border-radius: 8px;
-    padding: 4px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: px;
   }
-  
+  .company-logo:hover {
+    box-shadow: 2px 2px 10px rgb(243, 185, 28), 2px 2px 20px rgb(105, 208, 215);
+    transition: all 0.3s ease-in-out;
+  }
   .project-meta {
     flex: 1;
   }
